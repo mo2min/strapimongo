@@ -1,0 +1,48 @@
+{
+  "connection": "default",
+  "collectionName": "site",
+  "info": {
+    "name": "site",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": [
+      "created_at",
+      "updated_at"
+    ],
+    "comment": ""
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "handle": {
+      "unique": true,
+      "default": "handle",
+      "required": true,
+      "type": "string"
+    },
+    "keywords": {
+      "collection": "keywords",
+      "via": "sites"
+    },
+    "draft_description": {
+      "type": "json"
+    },
+    "settings": {
+      "type": "json"
+    },
+    "articles": {
+      "collection": "article",
+      "via": "site"
+    },
+    "sproviders": {
+      "collection": "sprovider"
+    },
+    "sprovider": {
+      "model": "sprovider",
+      "via": "sites"
+    }
+  }
+}

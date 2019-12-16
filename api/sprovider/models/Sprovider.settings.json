@@ -1,0 +1,48 @@
+{
+  "connection": "default",
+  "collectionName": "sprovider",
+  "info": {
+    "name": "sprovider",
+    "description": ""
+  },
+  "options": {
+    "timestamps": [
+      "createdAt",
+      "updatedAt"
+    ]
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "mediaitems": {
+      "collection": "mediaitem",
+      "via": "sproviders",
+      "dominant": true
+    },
+    "articles": {
+      "collection": "article",
+      "via": "sproviders",
+      "dominant": true
+    },
+    "sites": {
+      "collection": "site",
+      "via": "sprovider"
+    },
+    "extras": {
+      "type": "json"
+    },
+    "content": {
+      "type": "text"
+    },
+    "rawcontent": {
+      "type": "json"
+    },
+    "published": {
+      "type": "boolean"
+    }
+  }
+}

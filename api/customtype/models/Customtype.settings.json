@@ -1,0 +1,39 @@
+{
+  "connection": "default",
+  "collectionName": "",
+  "info": {
+    "name": "customtype",
+    "description": ""
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "type": {
+      "enum": [
+        "service",
+        "product",
+        "location"
+      ],
+      "type": "enumeration"
+    },
+    "published": {
+      "type": "boolean"
+    },
+    "extras": {
+      "type": "json"
+    },
+    "rawcontent": {
+      "type": "json"
+    },
+    "content": {
+      "type": "text"
+    },
+    "description": {
+      "type": "text"
+    }
+  }
+}

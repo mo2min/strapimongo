@@ -1,0 +1,41 @@
+{
+  "connection": "default",
+  "collectionName": "mediaitem",
+  "info": {
+    "name": "mediaitem",
+    "description": ""
+  },
+  "options": {
+    "timestamps": [
+      "createdAt",
+      "updatedAt"
+    ]
+  },
+  "attributes": {
+    "alt": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "media": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload"
+    },
+    "url": {
+      "type": "string"
+    },
+    "articles": {
+      "collection": "article",
+      "via": "mediaitems"
+    },
+    "sproviders": {
+      "collection": "sprovider",
+      "via": "mediaitems"
+    }
+  }
+}

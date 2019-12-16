@@ -1,0 +1,48 @@
+{
+  "connection": "default",
+  "collectionName": "article",
+  "info": {
+    "name": "article",
+    "description": ""
+  },
+  "options": {
+    "timestamps": [
+      "createdAt",
+      "updatedAt"
+    ]
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text"
+    },
+    "published": {
+      "type": "boolean"
+    },
+    "mediaitems": {
+      "collection": "mediaitem",
+      "via": "articles",
+      "dominant": true
+    },
+    "content": {
+      "type": "richtext"
+    },
+    "rawcontent": {
+      "type": "json"
+    },
+    "extras": {
+      "type": "json"
+    },
+    "site": {
+      "model": "site",
+      "via": "articles"
+    },
+    "sproviders": {
+      "collection": "sprovider",
+      "via": "articles"
+    }
+  }
+}

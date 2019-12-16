@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/customtypes",
+      "handler": "Customtype.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/customtypes/count",
+      "handler": "Customtype.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/customtypes/:id",
+      "handler": "Customtype.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/customtypes",
+      "handler": "Customtype.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/customtypes/:id",
+      "handler": "Customtype.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/customtypes/:id",
+      "handler": "Customtype.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

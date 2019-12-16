@@ -1,0 +1,27 @@
+{
+  "connection": "default",
+  "collectionName": "keywords",
+  "info": {
+    "name": "keywords",
+    "description": ""
+  },
+  "options": {
+    "timestamps": [
+      "createdAt",
+      "updatedAt"
+    ]
+  },
+  "attributes": {
+    "keyword": {
+      "type": "string"
+    },
+    "volume": {
+      "type": "integer"
+    },
+    "sites": {
+      "collection": "site",
+      "dominant": true,
+      "via": "keywords"
+    }
+  }
+}

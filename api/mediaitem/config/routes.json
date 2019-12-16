@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/mediaitems",
+      "handler": "Mediaitem.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/mediaitems/count",
+      "handler": "Mediaitem.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/mediaitems/:id",
+      "handler": "Mediaitem.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/mediaitems",
+      "handler": "Mediaitem.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/mediaitems/:id",
+      "handler": "Mediaitem.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/mediaitems/:id",
+      "handler": "Mediaitem.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

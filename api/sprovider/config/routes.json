@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/sproviders",
+      "handler": "Sprovider.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/sproviders/count",
+      "handler": "Sprovider.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/sproviders/:id",
+      "handler": "Sprovider.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/sproviders",
+      "handler": "Sprovider.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/sproviders/:id",
+      "handler": "Sprovider.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/sproviders/:id",
+      "handler": "Sprovider.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
